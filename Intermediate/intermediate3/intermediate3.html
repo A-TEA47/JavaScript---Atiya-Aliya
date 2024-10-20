@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Property Manipulation</title>
+    <link rel="stylesheet" href="intermediate3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Object Property Manipulation</h1>
+        <div>
+            <label for="propertyName">Property Name:</label>
+            <input type="text" id="propertyName" placeholder="Enter property name">
+        </div>
+        <div>
+            <label for="propertyValue">Property Value:</label>
+            <input type="text" id="propertyValue" placeholder="Enter property value">
+        </div>
+        <button onclick="addProperty()">Add Property</button>
+        <button onclick="updateProperty()">Update Property</button>
+        <button onclick="removeProperty()">Remove Property</button>
+
+        <h2>Current Object:</h2>
+        <pre id="objectDisplay"></pre>
+    </div>
+
+    <script src="intermediate3.js"></script>
+    <a href="../../index.html" class="back-button">Return to Home Page</a>
+</body>
+</html>

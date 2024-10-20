@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTTP Client</title>
+    <link rel="stylesheet" href="advance.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basic HTTP Client</h1>
+
+        <div>
+            <label for="url">API URL:</label>
+            <input type="text" id="url" placeholder="Enter API URL">
+        </div>
+
+        <div>
+            <label for="method">Method:</label>
+            <select id="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="data">Data (for POST/PUT):</label>
+            <textarea id="data" placeholder='{"key": "value"}' rows="4"></textarea>
+        </div>
+
+        <button onclick="makeRequest()">Send Request</button>
+        
+        <p id="result"></p>
+    </div>
+
+    <script src="advance2.js"></script>
+
+    <a href="../../index.html" class="back-button">Return to Home Page</a>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.back-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: #155db2;
+}
+
+.container {
+    text-align: center;
+}
+
+.draggable {
+    margin: 20px;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.dropzone {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #007BFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007BFF;
+}
