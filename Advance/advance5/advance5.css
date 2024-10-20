@@ -18,7 +18,20 @@ body {
     background-color: #155db2;
 }
 
-/* Styling for the image container */
+.next-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.next-button:hover {
+    background-color: green;
+}
+
+
 .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,16 +39,14 @@ body {
     justify-content: center;
 }
 
-/* Styling for lazy images */
 .lazy-image {
     width: 300px;
     height: 200px;
-    background-color: #f0f0f0; /* Placeholder color while the image loads */
+    background-color: #f0f0f0; 
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
 
-/* Once the image is loaded, this class will make it visible */
 .lazy-image.loaded {
     opacity: 1;
 }
